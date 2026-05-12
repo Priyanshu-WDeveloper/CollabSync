@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import {
   Zap,
   Users,
@@ -286,10 +286,10 @@ const LandingPage: React.FC = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="group flex items-center justify-center space-x-2 px-8 py-4 rounded-2xl bg-gradient-to-r from-purple-600 via-fuchsia-600 to-cyan-600 text-white font-semibold text-lg shadow-2xl shadow-purple-500/30 hover:shadow-purple-500/50 transition-all hover:scale-105">
+                <Link to="/register" className="group flex items-center justify-center space-x-2 px-8 py-4 rounded-2xl bg-gradient-to-r from-purple-600 via-fuchsia-600 to-cyan-600 text-white font-semibold text-lg shadow-2xl shadow-purple-500/30 hover:shadow-purple-500/50 transition-all hover:scale-105">
                   <span>Start Free</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </button>
+                </Link>
                 <button
                   className={`flex items-center justify-center space-x-2 px-8 py-4 rounded-2xl font-semibold text-lg transition-all border-2 ${
                     darkMode
@@ -628,9 +628,9 @@ const LandingPage: React.FC = () => {
                 Join thousands of teams already collaborating in
                 real-time with CollabSync.
               </p>
-              <button className="px-8 py-4 rounded-2xl bg-white text-purple-600 font-semibold text-lg hover:scale-105 transition-transform shadow-xl">
+              <Link to="/register" className="px-8 py-4 rounded-2xl bg-white text-purple-600 font-semibold text-lg hover:scale-105 transition-transform shadow-xl">
                 Get Started Free
-              </button>
+              </Link>
             </div>
           </div>
         </div>
